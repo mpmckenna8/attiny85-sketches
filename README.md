@@ -1,9 +1,7 @@
 Some arduino sketches for the Noisebridge badge
 
 song\_writer\_attiny85 directory contains an example of code which when uploaded
-through the Arduino ide plays row row row your boat. I'm pretty sure it's just
-copied from somewhere. Or maybe https://github.com/robz coded it but I don't
-think so.
+through the Arduino ide plays row row row your boat. It's really great considering @robz made it from scratch.
 
 
 To hook up the ISP pins so you can program it too you have some options:
@@ -42,3 +40,11 @@ When trying to program the board the pin reference is:
 
 So while using the Arduino IDE open the simple blink example and change the 13
 to 0. And the RGB led wiill blink blue.
+
+If you want to try to make use of the speaker but not be confined to the simple api in song_writer_attiny85 you have a few other options.
+
+You could follow along with the examples on [https://www.arduino.cc/en/Tutorial/PlayMelody](https://www.arduino.cc/en/Tutorial/PlayMelody) and try and hack those up if you find them more clear.
+
+Or there's this simple tones example [http://www.technoblogy.com/show?KVO](http://www.technoblogy.com/show?KVO)
+
+Or try and get some attiny cores installed with include the tone() function from the arduino library so you can just copy from all the examples which use that. [http://lizastark.com/thesis/2011/12/attiny85-initial-tests-tone-function-support/](http://lizastark.com/thesis/2011/12/attiny85-initial-tests-tone-function-support/)
